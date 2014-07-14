@@ -1,0 +1,45 @@
+{
+    "name": "boilerplate",
+    "version": "1.0.0",
+    "description": "HTML5 Boilerplate Assets",
+    "keywords": "larukedi",
+    "homepage": "https://github.com/larukedi/html5-boilerplate",
+    "bugs": {
+        "url": "https://github.com/larukedi/html5-boilerplate/issues",
+        "email": "eser@ozvataf.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/larukedi/html5-boilerplate/blob/master/LICENSE"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Eser 'Laroux' Ozvataf",
+            "email": "eser@ozvataf.com",
+            "url": "http://eser.ozvataf.com/"
+        }
+    ],
+    "main": "boilerplate",
+    "repository": {
+        "type": "local",
+        "url": ""
+    },
+    "devDependencies": {
+        "grunt-contrib-less": "~0.11.0",
+        "grunt-contrib-uglify": "~0.2.7",
+        "grunt-contrib-jshint": "~0.6.3",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-cssmin": "~0.9.0",
+        "grunt-cli": "~0.1",
+        "grunt": "~0.4.1"
+    },
+    "dependencies": {
+    },
+    "scripts": {
+        "test": "grunt test --verbose --force"
+    }
+}
