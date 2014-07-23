@@ -14387,7 +14387,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
         'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeStamp', 'trace', 'warn'
+        'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
     ];
     var length = methods.length;
     var console = (window.console = window.console || {});

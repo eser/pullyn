@@ -3,13 +3,15 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         less: {
-            options: {
-                compress: false,
-                yuicompress: false,
-                optimization: 0
-            },
-            files: {
-                'assets/css/main.css': [ 'assets/less/main.less' ]
+            css: {
+                options: {
+                    compress: false,
+                    yuicompress: false,
+                    optimization: 0
+                },
+                files: {
+                    'assets/css/main.css': [ 'assets/less/main.less' ]
+                }
             }
         },
         concat: {
@@ -74,7 +76,7 @@ module.exports = function(grunt) {
         watch: {
             less: {
                 files: ['assets/less/**/*.less'],
-                tasks: ['less'],
+                tasks: ['less:css'],
                 options: {
                     nospawn: true
                 }
@@ -110,7 +112,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('test', ['jshint']);
     grunt.registerTask('js', ['jshint', 'concat:js', 'uglify:js']);
-    grunt.registerTask('css', ['less', 'concat:css', 'cssmin:css']);
-    grunt.registerTask('default', ['jshint', 'concat:js', 'uglify:js', 'less', 'concat:css', 'cssmin:css']); // , 'copy'
+    grunt.registerTask('css', ['less:css', 'concat:css', 'cssmin:css']);
+    grunt.registerTask('default', ['jshint', 'concat:js', 'uglify:js', 'less:css', 'concat:css', 'cssmin:css']); // , 'copy'
 
 };
